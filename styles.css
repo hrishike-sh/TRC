@@ -520,3 +520,43 @@ header .text:hover {
 .sponsor-container:hover .sponsor-label {
   color: #ffcccb;
 }
+
+.s-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.socials-text {
+  color: black;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+}
+
+.button-text {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.no-background {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
