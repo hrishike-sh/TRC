@@ -560,3 +560,80 @@ header .text:hover {
   align-items: center;
   justify-content: center;
 }
+
+/* CODE SECTION */
+
+.events-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+  width: 80%;
+  padding: 0 20px;
+}
+.events-text {
+  font-size: 40px;
+  margin-bottom: 2rem;
+  display: block;
+  text-align: center;
+  animation: fadeInText 2s ease-in-out;
+}
+
+.events-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.event-dcard {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  background-color: #777;
+  font-size: 0px;
+}
+
+.event-dcard:hover {
+  font-size: large;
+  transition: 0.2s;
+  transform: scale(1.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#taqneeq {
+  background-image: url("https://taqneeqfest.com/assets/logo-83e95c24.png");
+}
+
+#ifair {
+  background-image: url("https://www.shutterstock.com/image-vector/people-search-logo-template-illustration-600nw-2002875197.jpg");
+}
+
+#brs {
+  background-image: url("https://brs.techandresearchcell.in/BRS-Logo.png");
+}
+
+.event-dcard:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 880px) and (max-width: 1200px) {
+  .events-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 880px) {
+  .events-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
