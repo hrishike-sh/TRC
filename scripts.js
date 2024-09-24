@@ -17,3 +17,9 @@ sItems.forEach((sItem) => {
       .scrollIntoView({ behavior: "smooth" });
   });
 });
+
+document.querySelectorAll(".s-button").forEach((e) => {
+  e.addEventListener("click", () => {
+    window.location.href = e.id;
+  });
+});
